@@ -33,13 +33,4 @@ def draw_square():
         else:
             draw_circle()
 
-
-        
-
-        
-
-
-
-
-
 draw_square()
