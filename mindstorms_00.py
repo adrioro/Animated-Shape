@@ -13,6 +13,9 @@ def draw_circle(): # Function to draw a circle
     angie = turtle.Turtle()
     angie.shape ("arrow")
     angie.color("yellow")
+    angie.circle(50)
+    angie.color("red")
+    angie.pensize(5)
     angie.circle(100)
     window.exitonclick()
 
@@ -36,6 +39,7 @@ def draw_triangle(): # Drawing a triangle
         times = times +1
     else:
         draw_circle()
+
     
 
 def draw_square(): # Drawing a square and circle   
@@ -46,6 +50,7 @@ def draw_square(): # Drawing a square and circle
             action()
             times = times +1
         else:
-            draw_triangle()       
+            draw_triangle()
+            
 
 draw_square()
