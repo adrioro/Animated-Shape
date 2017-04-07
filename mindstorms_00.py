@@ -1,16 +1,17 @@
 import turtle
 
 window = turtle.Screen()
-window.bgcolor("red")
+window.bgcolor("orange")
 brad = turtle.Turtle()
-brad.shape("turtle")
-brad.color("yellow")
+brad.shape("arrow")
+brad.color("lightblue")
 brad.speed(9)
+brad.pensize(5)
 
-def draw_circle():
+def draw_circle(): # Drawing a circle
     angie = turtle.Turtle()
     angie.shape ("arrow")
-    angie.color("blue")
+    angie.color("yellow")
     angie.circle(100)
     
     window.exitonclick()
@@ -22,7 +23,7 @@ def action(): # Function to be used in my loop
     return
     
 
-def draw_square():    
+def draw_square(): # Drawing a square and triangle   
     max_times = 4
     times = 0
     
@@ -31,6 +32,9 @@ def draw_square():
             action()
             times = times +1
         else:
+            while times < 3:
+                action()
+                times = times +1
             draw_circle()
 
 draw_square()
