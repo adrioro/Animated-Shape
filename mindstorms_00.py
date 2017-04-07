@@ -1,4 +1,3 @@
-
 import turtle
 
 window = turtle.Screen()
@@ -39,8 +38,6 @@ def draw_triangle(): # Drawing a triangle
         times = times +1
     else:
         draw_circle()
-
-    
 
 def draw_square(): # Drawing a square and circle   
     max_times = 4
